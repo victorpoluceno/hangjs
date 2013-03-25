@@ -1,2 +1,2 @@
 #!/bin/sh
-sudo apt-get install curl vim htop
+sudo apt-get install -y curl vim htop

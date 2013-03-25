@@ -13,10 +13,10 @@ Vagrant::Config.run do |config|
 
   # Forward a port from the guest to the host, which allows for outside
   # computers to access the VM, whereas host only networking does not.
-  config.vm.forward_port 3000, 3000
+  config.vm.forward_port 9000, 9000
 
   # Configure a private network required by nfs folder share
-  config.vm.network :hostonly, "33.33.33.50"
+  config.vm.network :hostonly, "33.33.33.55"
 
   # NFS just does not work on windows
   if RUBY_PLATFORM =~ /mswin(32|64)/
